@@ -1,0 +1,10 @@
+<div>
+    <h4>{{comic?.title}}</h4>
+    <img src="{{comic?.cover}}" alt="{{comic?.title}}">
+    <p>Author: {{comic?.author}}</p>
+    <p>Company: {{comic?.company}}</p>
+    <button routerLink="/">Ir atrás</button>
+
+    <button (click)="deleteComic()">Eliminar</button>
+
+</div>

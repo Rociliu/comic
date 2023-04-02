@@ -1,0 +1,10 @@
+<div class="comic"> <!--aquí pinto mis comics con un bucle-->
+    <div *ngFor = "let comic of comicList">
+        <h4>{{comic.title}}</h4>
+        <img src="{{comic.cover}}" alt="{{comic.title}}">
+
+        <!--botón que me lleva a mi comic individual, después de esto tengo que crear mis variables en el comic.ts-->
+        <button routerLink="/comics/{{comic.id}}">Ver más</button>
+    </div>
+
+</div>

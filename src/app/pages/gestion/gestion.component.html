@@ -1,0 +1,12 @@
+<h3>Formulario</h3>
+<form [formGroup]="comicForm" (ngSubmit)="onSubmit()">
+    <input formControlName="title" placeholder="title"/>
+    <input formControlName="author" placeholder="author"/>
+    <input formControlName="cover" placeholder="cover"/>
+    <input formControlName="company" placeholder="company"/>
+
+    <button type="submit">SUBMIT</button>
+</form>
+
+<!--pego el componente hijo detail-->
+<app-detail [comic]="newComic"></app-detail>
